@@ -1,0 +1,47 @@
+.MyLoader {
+    margin-top: 20px;
+    
+}
+
+.SkeletonItem {
+
+    background-color: #00121f3d;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    animation-name: changeColor;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.SkeletonText {
+    background-color: #121f3d;
+    width: calc(100% - 60px);
+    height: 30px;
+    margin: 0px 10px;
+    border-radius: 8px;
+}
+
+.SkeletonIcon {
+    display: inline-block;
+    background-color: #121f3d;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    
+}
+
+@keyframes changeColor {
+    from {
+        background-color: #00121f3d;
+    }
+    to {    
+        background-color: #121f3d;
+    }
+}
+
